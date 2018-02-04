@@ -1,0 +1,10 @@
+# http://www.practicepython.org/exercise/2014/01/29/01-character-input.html
+
+"""
+Program will ask them their name and age then tell them when they will turn 100
+"""
+
+name = input("What is your name?")
+age = int(input ("What is your age?"))
+years_century = str(100 - age)
+print ("Hi " + name + ". You will be 100 years old in " + years_century + " years.")
