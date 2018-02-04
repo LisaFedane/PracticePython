@@ -1,0 +1,22 @@
+#http://www.practicepython.org/exercise/2014/04/16/11-check-primality-functions.html
+
+"""
+Determines if the user's number is a prime number or not
+"""
+
+import math
+user_num = int(input("Prime number checker - enter in your number"))
+
+def isPrime(user_num):
+  if user_num < 2:
+    #return False
+    print ("Not a Prime Number")
+    
+  for i in range (2, int(math.sqrt(user_num))+1):
+    if user_num %i == 0:
+      #return False
+      print ("Not a Prime Number")
+  #return True
+  print ("This is a Prime Number")
+
+isPrime(user_num)  
