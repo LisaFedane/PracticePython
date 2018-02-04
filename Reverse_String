@@ -1,0 +1,12 @@
+words = input('Please give me a list of words\n')
+
+def reverse_list(word_list):
+  word_list = words.split()
+
+  word_list.reverse()
+
+  string_list = ' '.join(word_list)
+
+  print (string_list)
+
+reverse_list(words)
