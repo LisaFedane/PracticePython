@@ -1,0 +1,29 @@
+sample_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,235, 361, 54, 292, 19, 188, 161, 99, 475, 301, 280, 175, 25, 13, 194, 286, 315, 494, 299, 222, 452, 167, 431, 87, 10, 342, 141, 352, 107, 228, 283, 460, 497, 341, 37, 158, 249, 35, 408, 97, 48, 247, 70, 142, 264, 240, 125, 57, 122, 318, 200, 134, 58, 238, 150, 215, 258, 71, 354, 277, 29, 140, 82, 69, 327, 50, 170, 51, 410, 434, 9, 34, 396, 334, 30, 144, 304, 173, 307, 217, 18, 308, 254, 290, 102, 492, 31, 402, 367, 103, 461, 420, 67, 454, 400, 52, 349, 66, 262, 288]
+
+
+sample_list.sort()
+
+ans = input("Enter your number to find out if it is in our list: \n")
+ans = int(ans)
+found = "Your number is not in our list"
+
+
+
+def binary_search(alist, item):
+  
+  if len(alist) == 0:
+    print (found)
+  else: 
+    midpoint = len(alist)//2
+    if alist[midpoint]==item:
+      print ("Yes your number, " + str(item) + " is in our list.")
+    else: 
+      if item<alist[midpoint]:
+        return binary_search(alist[:midpoint], item)
+      else:
+        return binary_search(alist[midpoint+1:], item)
+      
+    
+
+binary_search(sample_list, ans)
+        
