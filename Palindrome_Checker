@@ -1,0 +1,22 @@
+#http://www.practicepython.org/solution/2014/03/19/06-string-lists-solutions.html
+
+"""
+Takes a string from the user and tells them if it's a palindrome
+"""
+
+
+print ("Type in a word or statement and I will tell you if it is a palindrome")
+word = input()
+
+new_word = (word.lower().replace(" ", ""))
+
+
+p_word = list(new_word)
+drow = list(new_word)
+drow.reverse()
+
+
+if p_word == drow:
+  print (word + " is a palindrome")
+else:
+  print (word + " is not a palindrome")
