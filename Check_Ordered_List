@@ -1,0 +1,11 @@
+sample_list = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+
+def list_checker(inp_list):
+  ans = input("Enter your number to find out if it is in our list: \n")
+  ans = int(ans)
+  if ans in inp_list:
+    print ("Yes your number, " + str(ans) + " is in our list.")
+  else: 
+    print ("Your number, " + str(ans) + " was not found in our list.")
+
+list_checker(sample_list)
