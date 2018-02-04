@@ -1,0 +1,9 @@
+#http://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html
+
+"""
+Makes a new list with only even Numbers
+"""
+
+all_nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+even_nums = [ i for i in all_nums if i % 2 == 0]
+print (even_nums)
