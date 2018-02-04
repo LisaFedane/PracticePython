@@ -1,0 +1,12 @@
+# http://www.practicepython.org/exercise/2014/04/25/12-list-ends.html
+
+"""
+This program takes a list of numbers and makes a new list of the first and last elements in the list
+"""
+
+any_list = [5,10,15,20,25]
+
+def list_ends(a_list): 
+  print([a_list[0], a_list[-1]])
+ 
+list_ends(any_list)
