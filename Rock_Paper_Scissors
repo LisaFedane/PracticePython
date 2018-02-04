@@ -1,0 +1,39 @@
+#http://www.practicepython.org/exercise/2014/03/26/08-rock-paper-scissors.html
+
+""""
+Game for two players and will tell who the winner is
+"""
+
+import sys
+
+print ("Player 1 please pick Rock, Paper or Scissors: \n")
+ply_1 = input().lower()
+
+print ("Player 2 please pick Rock, Paper or Scissors: \n")
+ply_2 = input().lower()
+
+
+
+def compare (p_1, p_2):
+  if p_1 == p_2:
+    print ("It's a draw!")
+  elif p_1 == "rock":
+    if p_2 == "scissors":
+      print ("Player 1 wins with Rock crushes Scissors")
+    else:
+      print ("Player 2 wins with Paper covers Rock")
+  elif p_1 == "scissors":
+    if p_2 == "paper":
+      print ("Player 1 wins with Scissors cuts Paper")
+    else: 
+      print ("Play 2 wins with Rock crushes Scissors")
+  elif p_1 == "paper":
+    if p_2 == "rock":
+      print ("Player 1 wins with Paper covers Rock")
+    else: 
+      print ("Player 2 wins with Scissors cuts Paper")
+  else: 
+    print ("That is not a valid answer")
+    sys.exit()
+    
+print (compare (ply_1, ply_2))
