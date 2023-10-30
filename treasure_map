@@ -1,0 +1,42 @@
+line1 = ["⬜️","️⬜️","️⬜️"]
+line2 = ["⬜️","⬜️","️⬜️"]
+line3 = ["⬜️️","⬜️️","⬜️️"]
+map = [line1, line2, line3]
+print("Hiding your treasure! X marks the spot.")
+position = input() # Where do you want to put the treasure?
+# 🚨 Don't change the code above 👆
+# Write your code below this row 👇
+
+
+# Write your code above this row 👆
+# 🚨 Don't change the code below 👇
+
+
+#convert user input into a list
+input_list=list(position)
+position1=(input_list[0])
+position2=int((input_list[1]))
+
+#map alpha in position to the line
+if position2==1:
+   user_input_line = line1
+if position2==2:
+    user_input_line = line2
+if position2==3:
+    user_input_line = line3
+
+#map position1 to an int
+if position1=="A":
+  user_input_list = 0
+if position1=="B":
+  user_input_list = 1
+if position1=="C":
+  user_input_list = 2
+
+
+#replace coordinate with X
+
+user_input_line[user_input_list]="X"
+
+#print map with X
+print(f"{line1}\n{line2}\n{line3}")
